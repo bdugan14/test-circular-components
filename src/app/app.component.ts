@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SampleAppLayout } from './layout.data';
+import { Section } from './types';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recursive';
+  readonly sections: Section[] = SampleAppLayout;
 }
